@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import NavBar from './components/navBar/NavBar.component'
+import Dashboard from './pages/Dashboard/Dashboard.page'
+import { Routes, Route } from 'react-router-dom'
+import Logs from './pages/Logs/Logs.page'
 import './App.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="app">
       <div id="margin-container">
-        <h2>Gutted</h2>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/logs" element={<Logs />} />
+        </Routes>
+
       </div>
     </div>
   )
