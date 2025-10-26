@@ -29,13 +29,13 @@ const NavBar = () => {
                 <div className={`hamburger-links ${isHamburgerOpen ? 'open' : ''}`}>
                     <ul>
                         <li>
-                            <Link to="/" onClick={closeHamburger}>Logs</Link>
+                            <Link to="/logs" onClick={closeHamburger}>Logs</Link>
                         </li>
                         <li>
-                            <Link to="/" onClick={closeHamburger}>Challenges</Link>
+                            <Link to="/challenges" onClick={closeHamburger}>Challenges</Link>
                         </li>
                         <li>
-                            <Link to="/" onClick={closeHamburger}>Land Marks</Link>
+                            <Link to="/land-marks" onClick={closeHamburger}>Land Marks</Link>
                         </li>
                     </ul>
                 </div>
@@ -43,13 +43,13 @@ const NavBar = () => {
             <div className={`nav-links`}>
                 <ul>
                     <li>
-                        <Link to="/" onClick={closeHamburger}>Logs</Link>
+                        <Link to="/logs" onClick={closeHamburger}>Logs</Link>
                     </li>
                     <li>
-                        <Link to="/" onClick={closeHamburger}>Challenges</Link>
+                        <Link to="/challenges" onClick={closeHamburger}>Challenges</Link>
                     </li>
                     <li>
-                        <Link to="/" onClick={closeHamburger}>Land Marks</Link>
+                        <Link to="/land-marks" onClick={closeHamburger}>Land Marks</Link>
                     </li>
                 </ul>
             </div>

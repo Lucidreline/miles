@@ -8,6 +8,7 @@
     border-radius: 0.2rem;
     padding: 0 1rem;
     margin: 1.5rem 0 2rem 0;
+    transition: 0.3s ease-in-out;
 
     .nav-home {
         margin: 1.5rem 0;
@@ -33,6 +34,7 @@
 
         .hamburger-links {
             width: 100%;
+            display: none;
 
             ul {
                 display: none;
@@ -88,6 +90,10 @@
     @media (max-width: 530px) {
 
         .hamburger-container {
+
+            .hamburger-links {
+                display: flex;
+            }
 
             .hamburger {
                 display: flex;
