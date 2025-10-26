@@ -5,9 +5,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h2>Gutted</h2>
-    </>
+    <div className="app">
+      <div id="margin-container">
+        <h2>Gutted</h2>
+      </div>
+    </div>
   )
 }
 
