@@ -1,25 +1,125 @@
 .nav-bar {
     font-size: 1rem;
-    height: 3rem;
+    min-height: 3rem;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
     box-shadow: 0.05rem 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
     border-radius: 0.2rem;
     padding: 0 1rem;
     margin: 1.5rem 0 2rem 0;
 
     .nav-home {
+        margin: 1.5rem 0;
         display: flex;
     }
 
     .nav-links ul {
+        margin: 1.5rem 0;
         display: flex;
         justify-content: space-between;
         width: 16rem;
         flex-wrap: nowrap;
 
 
+    }
+
+    .hamburger-container {
+        margin: 1.1rem 0;
+        min-width: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .hamburger-links {
+            width: 100%;
+
+            ul {
+                display: none;
+            }
+
+            &.open {
+
+                ul {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    padding: 1rem 0 1rem 0;
+
+
+                    li a {
+                        color: red;
+                        display: inline-block;
+                        padding-top: 1.2rem;
+
+                    }
+                }
+            }
+        }
+
+
+        .hamburger {
+            display: none;
+            /* Hide by default on large screens */
+            flex-direction: column;
+            justify-content: space-around;
+            min-width: 2rem;
+            height: 2rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+
+            span {
+
+                width: 2rem;
+                height: 0.25rem;
+                background: rgb(0, 0, 0);
+                border-radius: 10px;
+                transition: all 0.3s linear;
+                position: relative;
+                transform-origin: 1px;
+            }
+
+        }
+    }
+
+    @media (max-width: 530px) {
+
+        .hamburger-container {
+
+            .hamburger {
+                display: flex;
+
+                &.open {
+
+                    span {
+                        width: 2.05rem;
+
+                        &#top {
+                            transform: rotate(45deg);
+                            transform-origin: 0% 50%;
+                        }
+
+                        &#middle {
+                            opacity: 0;
+                        }
+
+                        &#bottom {
+                            transform: rotate(-45deg);
+                            transform-origin: 4% 50%;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+        .nav-links {
+            display: none;
+        }
     }
 }

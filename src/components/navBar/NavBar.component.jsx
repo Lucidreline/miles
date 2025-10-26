@@ -15,7 +15,32 @@ const NavBar = () => {
             <div className="nav-home">
                 <Link to="/" onClick={closeHamburger}>Miles</Link>
             </div>
-            <div className={`nav-links ${isHamburgerOpen ? 'open' : ''}`}>
+            <div className="hamburger-container">
+
+                <button
+                    className={`hamburger ${isHamburgerOpen ? 'open' : ''}`}
+                    onClick={() => setIsHamburgerOpen(!isHamburgerOpen)} // Toggles the menu
+                >
+                    {/* These are the three lines of the hamburger icon */}
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </button>
+                <div className={`hamburger-links ${isHamburgerOpen ? 'open' : ''}`}>
+                    <ul>
+                        <li>
+                            <Link to="/" onClick={closeHamburger}>Logs</Link>
+                        </li>
+                        <li>
+                            <Link to="/" onClick={closeHamburger}>Challenges</Link>
+                        </li>
+                        <li>
+                            <Link to="/" onClick={closeHamburger}>Land Marks</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className={`nav-links`}>
                 <ul>
                     <li>
                         <Link to="/" onClick={closeHamburger}>Logs</Link>
