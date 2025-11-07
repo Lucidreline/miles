@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logData from '../../fakeData';
 import LogListItem from '../LogListItem/LogListItem.component';
+import './LogList.styles.scss'
 
 const LogList = () => {
     const [logs, setLogs] = useState([]);
