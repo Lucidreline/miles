@@ -28,10 +28,22 @@ const LogList = () => {
 
     console.log(logs)
     return (
-        <div>
-            {logs.map(log => (
-                <LogListItem key={log.timestamp} log={log} />
-            ))}
+        <div className='log-list'>
+            <div className="list-header">
+                <span className="timestamp-item">Timestamp</span>
+                <span className="distance-item">Distance (Miles)</span>
+                <span className="steps-item">Steps</span>
+                <span className="calories-item">Calories</span>
+                <span className="duration-item">Duration</span>
+
+            </div>
+            <div className='line-breaker' />
+            <div className="list-items">
+                {logs.map(log => (
+                    <LogListItem key={log.timestamp} log={log} />
+                ))}
+
+            </div>
         </div>
     )
 }

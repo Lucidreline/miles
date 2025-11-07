@@ -1,0 +1,47 @@
+@use '../../globalVars' as v;
+
+.log-list {
+    border: orange groove 2px;
+    padding: 0rem 0.75rem;
+
+    .list-header span {
+        display: inline-block; // to make the width work
+        padding: 0.8rem 0;
+    }
+
+    .timestamp-item {
+        width: 12rem;
+    }
+
+    .distance-item {
+        width: 6rem;
+    }
+
+    .steps-item {
+        width: 6rem;
+    }
+
+    .calories-item {
+        width: 6rem;
+    }
+
+    .duration-item {
+        width: 7rem;
+    }
+
+
+
+
+
+    .line-breaker {
+        color: cyan;
+        width: 100%;
+        text-align: center;
+        height: 0.05rem;
+        background-color: red;
+        margin: 0 auto;
+        border-radius: v.$border-radius;
+    }
+
+
+}

@@ -2,14 +2,12 @@
 
 .log-list-item-container {
     display: flex;
-    border: black solid 2px;
-    justify-content: space-between;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0;
     border-radius: v.$border-radius;
 
     .item-section {
         span {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
 }
