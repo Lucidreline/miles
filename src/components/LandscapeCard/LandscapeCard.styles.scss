@@ -1,0 +1,63 @@
+@use '../../globalVars' as v;
+
+$pad: 0.4rem;
+
+.landscape-card {
+    border: solid rgb(0, 0, 0) 1px;
+    min-height: 5rem;
+    padding: $pad;
+    border-radius: v.$border-radius;
+
+
+    display: flex;
+
+    .photo {
+        width: 35%;
+        border-radius: v.$border-radius;
+        margin-right: $pad;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .line-breaker {
+        border: black 1px solid;
+        width: 100%;
+        text-align: center;
+        height: 0.05rem;
+        background-color: black;
+        margin: $pad auto;
+        border-radius: v.$border-radius;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-weight: bold;
+            font-size: 17px;
+            display: block;
+        }
+
+        .description {
+            font-weight: lighter;
+            font-size: 9px;
+            display: block;
+        }
+
+        .bottom {
+            height: 100%;
+            display: flex;
+            align-items: end;
+
+            .span {
+                display: block;
+            }
+        }
+    }
+
+
+}
