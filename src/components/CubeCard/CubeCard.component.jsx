@@ -11,7 +11,7 @@ const CubeCard = ({ progress = 15 }) => {
         <div className="cube-card">
             <div className="photo" style={{ backgroundImage: `url(${cardPhoto})` }}></div>
             <div className="bottom">
-                <span className='name'>Home to Big Bear</span>
+                <span className='name'>November Steps</span>
                 <div className='progress-bar-container'>
                     <div className='line-breaker' />
                     <div className='progress-bar' style={progressBarStyles} />

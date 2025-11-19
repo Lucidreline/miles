@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logData from '../../fakeData';
+import { logData } from '../../fakeData';
 import LogListItem from '../LogListItem/LogListItem.component';
 import './LogList.styles.scss'
 

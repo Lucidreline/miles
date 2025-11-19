@@ -5,7 +5,7 @@ import CubeCard from '../../components/CubeCard/CubeCard.component'
 const LandMarks = () => {
     return (
         <div>
-            {/* <HorizontalCard /> */}
+            <HorizontalCard />
             <CubeCard />
         </div>
 

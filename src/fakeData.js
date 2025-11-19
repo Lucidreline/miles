@@ -1,4 +1,4 @@
-const logData =
+export const logData =
     [
         {
             timestamp: "10/26/25 14:51",
@@ -26,5 +26,58 @@ const logData =
         }
     ]
 
+export const challengeData = [
+    {
+        id: 'a',
+        name: "November Steps Boi",
+        miles: {
+            total: 170,
+            soFar: 2
+        },
+        landmarks: [1],
+        startDate: "date1",
+        endDate: "date2"
+    },
+    {
+        id: 'b',
+        name: "Walk the pain away",
+        miles: {
+            total: 10,
+            soFar: 1
+        },
+        landmarks: [1],
+        startDate: "date1",
+        endDate: "date2"
+    },
+    {
+        id: 'c',
+        name: "I'm a runner, I'm a track star",
+        miles: {
+            total: 70,
+            soFar: 70
+        },
+        landmarks: [1],
+        startDate: "date1",
+        endDate: "date2"
+    }
+]
 
-export default logData;
+export const landmarkData = [
+    {
+        id: '1',
+        name: "Great Wall of China",
+        description: "So called impossible to walk completely so...",
+        distanceMiles: 170,
+        createdAt: "today",
+        timesCompleted: 3
+    },
+    {
+        id: '2',
+        name: "Twin Peaks",
+        description: "So called impossible to walk completely so...",
+        distanceMiles: 35,
+        createdAt: "today",
+        timesCompleted: 3
+    },
+]
+
