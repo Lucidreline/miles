@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { challengeData } from '../../fakeData'
 import CubeCard from '../CubeCard/CubeCard.component'
+import './CubeCardList.styles.scss'
 
 const CubeCardList = () => {
     const [challenges, setChallenges] = useState([]);
