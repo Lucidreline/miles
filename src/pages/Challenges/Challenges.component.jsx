@@ -1,8 +1,11 @@
 import React from 'react'
+import CubeCardList from '../../components/CubeCardList/CubeCardList.component'
 
 const Challenges = () => {
     return (
-        <div>Challenges</div>
+        <div>
+            <CubeCardList />
+        </div>
     )
 }
 

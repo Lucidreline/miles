@@ -3,7 +3,10 @@ import './CubeCard.styles.scss'
 import cardPhoto from '../../public/landmarks/Logo.png'
 
 
-const CubeCard = ({ progress = 15 }) => {
+const CubeCard = ({ name, miles }) => {
+
+    const progress = (miles.soFar / miles.total) * 100
+
     const progressBarStyles = {
         width: `${progress}%`
     };
@@ -11,13 +14,13 @@ const CubeCard = ({ progress = 15 }) => {
         <div className="cube-card">
             <div className="photo" style={{ backgroundImage: `url(${cardPhoto})` }}></div>
             <div className="bottom">
-                <span className='name'>November Steps</span>
+                <span className='name'>{name}</span>
                 <div className='progress-bar-container'>
                     <div className='line-breaker' />
                     <div className='progress-bar' style={progressBarStyles} />
                 </div>
 
-                <span className='mile-count'>18/70 Miles</span>
+                <span className='mile-count'>{miles.soFar}/{miles.total} Miles</span>
             </div>
         </div>
     )

@@ -32,7 +32,7 @@ export const challengeData = [
         name: "November Steps Boi",
         miles: {
             total: 170,
-            soFar: 2
+            soFar: 20
         },
         landmarks: [1],
         startDate: "date1",
