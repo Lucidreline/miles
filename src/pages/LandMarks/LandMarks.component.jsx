@@ -1,9 +1,14 @@
 import React from 'react'
-import LandscapeCard from '../../components/LandscapeCard/LandscapeCard.component'
+import HorizontalCard from '../../components/HorizontalCard/HorizontalCard.component'
+import CubeCard from '../../components/CubeCard/CubeCard.component'
 
 const LandMarks = () => {
     return (
-        <div><LandscapeCard /></div>
+        <div>
+            {/* <HorizontalCard /> */}
+            <CubeCard />
+        </div>
+
     )
 }
 

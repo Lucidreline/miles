@@ -1,6 +1,6 @@
 import React from 'react'
 import cardPhoto from '../../public/landmarks/Logo.png'
-import './LandscapeCard.styles.scss'
+import './HorizontalCard.styles.scss'
 
 const LandscapeCard = () => {
     return (
